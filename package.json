@@ -1,0 +1,31 @@
+{
+  "name": "gulp-crittr",
+  "version": "1.0.0",
+  "description": "A gulp package for creating critical css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Taintedmedialtd/gulp-crittr.git"
+  },
+  "keywords": [
+    "gulp",
+    "crittr",
+    "critical",
+    "css"
+  ],
+  "author": "Tainted Media Ltd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Taintedmedialtd/gulp-crittr/issues"
+  },
+  "homepage": "https://github.com/Taintedmedialtd/gulp-crittr#readme",
+  "devDependencies": {
+    "crittr": "^1.3.0",
+    "eslint-restricted-globals": "^0.1.1",
+    "gulp-util": "^3.0.8",
+    "through2": "^4.0.2"
+  }
+}
