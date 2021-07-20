@@ -37,9 +37,9 @@ module.exports = (opts) => {
 				height,
 			},
 		})
-			.then((extractedCss) => {
+			.then(({ critical }) => {
 				/* eslint-disable-next-line no-buffer-constructor */
-				file.contents = new Buffer(extractedCss);
+				file.contents = new Buffer(critical);
 				file.path = file.base + options.out;
 				callback(null, file);
 			})
