@@ -1,6 +1,6 @@
 {
   "name": "gulp-crittr",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A gulp package for creating critical css",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "url": "https://github.com/Taintedmedialtd/gulp-crittr/issues"
   },
   "homepage": "https://github.com/Taintedmedialtd/gulp-crittr#readme",
-  "devDependencies": {
+  "dependencies": {
     "crittr": "^1.3.0",
     "eslint-restricted-globals": "^0.1.1",
     "gulp-util": "^3.0.8",
