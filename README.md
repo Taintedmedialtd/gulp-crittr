@@ -4,17 +4,17 @@ A super simple package to add crittr to gulp for creating critical CSS files fro
 ## Installation
 
 ```
-	npm install taintedmedialtd/gulp-crittr --save-dev
+npm install taintedmedialtd/gulp-crittr --save-dev
 ```
 
 ## Basic Usage
 
 ```
-	TODO
+TODO
 ```
 
 ## Options
 
 ```
-	TODO
+TODO
 ```

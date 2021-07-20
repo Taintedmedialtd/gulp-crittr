@@ -9,14 +9,12 @@ module.exports = (opts) => {
 	const options = Object.assign({
 		out: 'critical.css',
 		urls: [],
-		css: '',
 		width: 1920,
 		height: 1080,
 	}, opts || {});
 
 	const {
 		urls,
-		css,
 		width,
 		height,
 	} = options;
@@ -32,7 +30,7 @@ module.exports = (opts) => {
 
 		return Crittr({
 			urls,
-			css,
+			css: file.contents,
 			device: {
 				width,
 				height,
@@ -42,7 +40,8 @@ module.exports = (opts) => {
 				file.contents = Buffer.from(extractedCss, 'utf-8');
 				file.path = file.base + options.out;
 				callback(null, file);
-			}).catch(err => callback(err));
+			})
+			.catch(err => callback(err));
 	};
 
 	return through.obj(buildCriticalCss);
