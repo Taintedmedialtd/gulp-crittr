@@ -39,7 +39,8 @@ module.exports = (opts) => {
 			},
 		})
 			.then((extractedCss) => {
-				file.contents = Buffer.from(extractedCss, 'utf-8');
+				/* eslint-disable-next-line no-buffer-constructor */
+				file.contents = new Buffer(extractedCss);
 				file.path = file.base + options.out;
 				callback(null, file);
 			})
