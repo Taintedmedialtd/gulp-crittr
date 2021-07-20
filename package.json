@@ -1,6 +1,6 @@
 {
   "name": "gulp-crittr",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A gulp package for creating critical css",
   "main": "index.js",
   "scripts": {

@@ -28,9 +28,11 @@ module.exports = (opts) => {
 			return callback(null, file);
 		}
 
+		const css = file.contents.toString();
+
 		return Crittr({
 			urls,
-			css: file.contents,
+			css,
 			device: {
 				width,
 				height,
